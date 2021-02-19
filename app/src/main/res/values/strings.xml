@@ -1,0 +1,66 @@
+<resources>
+    <string name="app_name">Cal4School</string>
+
+    <string-array name="setperiods">
+        <item>English</item>
+        <item>Spanish</item>
+        <item>Math</item>
+        <item>Physics</item>
+        <item>Chemistry</item>
+        <item>Computer science</item>
+        <item>Psychology</item>
+        <item>PE</item>
+    </string-array>
+    <string-array name="setSocialScience">
+        <item>Psychology</item>
+        <item>Sociology</item>
+        <item>Business Management</item>
+        <item>Economics</item>
+        <item>Non-contact</item>
+    </string-array>
+    <string-array name="setScience">
+        <item>Physics</item>
+        <item>Biology</item>
+        <item>Non-contact</item>
+    </string-array>
+    <string-array name="setEnglish">
+        <item>English</item>
+        <item>Non-contact</item>
+    </string-array>
+    <string-array name="setMathematics">
+        <item>Mathematics</item>
+        <item>Math Studies</item>
+        <item>Non-contact</item>
+    </string-array>
+    <string-array name="setAltLan">
+        <item>Spanish</item>
+        <item>Off-site</item>
+        <item>Non-contact</item>
+    </string-array>
+    <string-array name="setAltScience">
+        <item>Music</item>
+        <item>Computer Science</item>
+        <item>Art</item>
+        <item>Drama</item>
+        <item>Chemistry</item>
+        <item>Biology</item>
+        <item>Physics</item>
+        <item>French</item>
+        <item>Non-contact</item>
+    </string-array>
+    <string-array name="setPhysicalEducation">
+        <item>Physical Education</item>
+        <item>Physical Endurance</item>
+        <item>Public Execution</item>
+    </string-array>
+    <string-array name="setTOK">
+        <item>Theory Of Knowledge</item>
+        <item>Theory of Knowledge</item>
+        <item>Theory Of knowledge</item>
+        <item>Theory of knowledge</item>
+        <item>theory Of Knowledge</item>
+        <item>theory of Knowledge</item>
+        <item>theory Of knowledge</item>
+        <item>theory of knowledge</item>
+    </string-array>
+</resources>

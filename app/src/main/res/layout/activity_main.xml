@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/editbtn"
+        android:layout_width="88dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="50dp"
+        android:text="Edit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/eventsbtn"
+        android:layout_width="88dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginBottom="50dp"
+        android:text="Events"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/protobtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="50dp"
+        android:text="PROTOTYPE"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/editbtn"
+        app:layout_constraintStart_toEndOf="@+id/eventsbtn" />
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/protobtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!-- Top Half -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <!-- Monday -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <!--1,2-->
+                    <Spinner
+                        android:id="@+id/monSocialScience"
+                        android:singleLine="false"
+                        android:layout_width="150dp"
+                        android:layout_height="120dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" />
+                    <!--3-->
+                    <Spinner
+                        android:id="@+id/monMathematics"
+                        android:layout_width="150dp"
+                        android:layout_height="60dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" />
+                    <!--4-->
+                    <Spinner
+                        android:id="@+id/monTOK"
+                        android:layout_width="150dp"
+                        android:layout_height="60dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" />
+                </LinearLayout>
+
+                <!-- Tuesday -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <!--1,2-->
+                    <Spinner
+                        android:id="@+id/tueEnglish"
+                        android:layout_width="150dp"
+                        android:layout_height="120dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" />
+                    <!--3,4-->
+                    <Spinner
+                        android:id="@+id/tueAltLan"
+                        android:layout_width="150dp"
+                        android:layout_height="120dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" />
+                </LinearLayout>
+
+                <!-- Wednesday -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <!--1-->
+                    <Spinner
+                        android:id="@+id/wedPhysicalEducation"
+                        android:layout_width="150dp"
+                        android:layout_height="60dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" />
+                    <!--2,3-->
+                    <Spinner
+                        android:id="@+id/wedAltScience"
+                        android:layout_width="150dp"
+                        android:layout_height="120dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" />
+                    <!--4-->
+                    <Spinner
+                        android:id="@+id/wedAltLan"
+                        android:layout_width="150dp"
+                        android:layout_height="60dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" />
+                </LinearLayout>
+
+                <!-- Thursday -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <!--1-->
+                    <Spinner
+                        android:id="@+id/thuSocialScience"
+                        android:layout_width="150dp"
+                        android:layout_height="60dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" />
+                    <!--2-->
+                    <Spinner
+                        android:id="@+id/thuEnglish"
+                        android:layout_width="150dp"
+                        android:layout_height="60dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" />
+                    <!--3-->
+                    <Spinner
+                        android:id="@+id/thuScience"
+                        android:layout_width="150dp"
+                        android:layout_height="60dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" />
+                    <!--4-->
+                    <Spinner
+                        android:id="@+id/thuAltScience"
+                        android:layout_width="150dp"
+                        android:layout_height="60dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" />
+                </LinearLayout>
+
+                <!-- Friday -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <!--1-->
+                    <Spinner
+                        android:id="@+id/friAltScience"
+                        android:layout_width="150dp"
+                        android:layout_height="60dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" />
+                    <!--2-->
+                    <Spinner
+                        android:id="@+id/friSocialScience"
+                        android:layout_width="150dp"
+                        android:layout_height="60dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" />
+                    <!--3-->
+                    <Spinner
+                        android:id="@+id/friScience"
+                        android:layout_width="150dp"
+                        android:layout_height="60dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" />
+                    <!--4-->
+                    <Spinner
+                        android:id="@+id/friAltLan"
+                        android:layout_width="150dp"
+                        android:layout_height="60dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- LUNCH ROW(Put only LUNCH inside, and no, not the menu.) -->
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/lunchText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="LUNCH"
+                    android:textAlignment="center"
+                    android:textSize="24dp" />
+            </TableRow>
+            <!-- Bottom Half -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!-- Monday -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <!--5,6-->
+                    <Spinner
+                        android:id="@+id/monScience"
+                        android:layout_width="150dp"
+                        android:layout_height="120dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" />
+                    <!--7-->
+                    <Spinner
+                        android:id="@+id/monAltScience"
+                        android:layout_width="150dp"
+                        android:layout_height="60dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" />
+                </LinearLayout>
+
+                <!-- Tuesday -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <!--5-->
+                    <Spinner
+                        android:id="@+id/tueScience"
+                        android:layout_width="150dp"
+                        android:layout_height="60dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" />
+                    <!--6-->
+                    <Spinner
+                        android:id="@+id/tueMathematics"
+                        android:layout_width="150dp"
+                        android:layout_height="60dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" />
+                    <!--7-->
+                    <Spinner
+                        android:id="@+id/tueSocialScience"
+                        android:layout_width="150dp"
+                        android:layout_height="60dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" />
+                </LinearLayout>
+
+                <!-- Wednesday -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <!--5-->
+                    <Spinner
+                        android:id="@+id/wedEnglish"
+                        android:layout_width="150dp"
+                        android:layout_height="60dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" />
+                    <!--6,7-->
+                    <Spinner
+                        android:id="@+id/wedMathematics"
+                        android:layout_width="150dp"
+                        android:layout_height="120dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" />
+                </LinearLayout>
+
+                <!-- Thursday -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <!--5-->
+                    <Spinner
+                        android:id="@+id/thuAltLan"
+                        android:layout_width="150dp"
+                        android:layout_height="60dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" />
+                    <!--6,7-->
+                    <Spinner
+                        android:id="@+id/thuTOK"
+                        android:layout_width="150dp"
+                        android:layout_height="120dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" />
+                </LinearLayout>
+
+                <!-- Friday -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <!--5-->
+                    <Spinner
+                        android:id="@+id/friMathematics"
+                        android:layout_width="150dp"
+                        android:layout_height="60dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" />
+                    <!--6-->
+                    <Spinner
+                        android:id="@+id/friEnglish"
+                        android:layout_width="150dp"
+                        android:layout_height="60dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" />
+                    <!--7-->
+                    <Spinner
+                        android:id="@+id/friPhysicalEducation"
+                        android:layout_width="150dp"
+                        android:layout_height="60dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pre-Alpha v.0.0.4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

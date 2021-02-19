@@ -1,0 +1,13 @@
+{Activity}
+    Created DBContract
+    Created calModel
+    Created eveModel
+    Created CalendarDBHelper
+    [DBContract]
+        added definition for table contents of period
+        added definition for table contents of events
+    [LIBRARY]
+        added data base containing period table and events table
+    [CalendarDBHelper]
+        imports added
+        added class
